@@ -71,11 +71,36 @@ Para ejecutar este proyecto, se requiere el siguiente entorno:
 * **Base de Datos:** MySQL 8.0 / Derby Local.
 * **SO:** Windows 11.
 
-##  Instalación
-### Ambiente de Desarrollo
-1. Clonar el repositorio: `git clone https://github.com/mdem26x-lang/inventario-piezas.git`
-2. Abrir el proyecto en NetBeans (File > Open Project).
-3. Dejar que Maven descargue las dependencias automáticamente.
+## Instalación
+
+### 1. Instalación del Ambiente de Desarrollo
+Para poner en marcha el proyecto en una computadora nueva, siga estos pasos:
+1. **Instalar el JDK:** Descargue e instale Java Development Kit 17 desde el sitio oficial de Oracle o Adoptium.
+2. **Configurar el IDE:** Instale Apache NetBeans IDE (versión 21 recomendada).
+3. **Clonar el Proyecto:** Abra una terminal o use la interfaz de GitHub para clonar este repositorio:
+   `git clone https://github.com/mdem26x-lang/inventario-piezas.git`
+4. **Importar en NetBeans:** - Vaya a `File` > `Open Project`.
+   - Seleccione la carpeta descargada (identificada con el icono de Maven).
+   - Espere a que el IDE descargue las librerías necesarias (dependencias del pom.xml).
+
+### 2. Ejecución de Pruebas Manuales
+Antes de usar el sistema, realice estas verificaciones:
+1. **Prueba de Conexión:** En NetBeans, vaya a la pestaña "Services" > "Databases" y asegúrese de que la conexión a MySQL esté activa.
+2. **Ejecución del Sistema:** Haga clic derecho en el proyecto y seleccione `Run`. El sistema debe abrir la ventana principal de inventario.
+3. **Verificación de Datos:** Ingrese un código de parte conocido (ej. A0162543-M) en la barra de búsqueda para confirmar que la base de datos responde correctamente.
+
+### 3. Implementación (Producción)
+#### Ambiente Local:
+Para ejecutar la aplicación fuera de NetBeans:
+1. En NetBeans, haga clic en `Clean and Build`.
+2. Busque el archivo generado en la carpeta `/target` con extensión `.jar`.
+3. Ejecute el comando: `java -jar nombre-del-archivo.jar`.
+
+#### Ambiente en la Nube (Heroku):
+1. Crear una cuenta en Heroku y un nuevo "App".
+2. Configurar el Add-on `Heroku Postgres` o `ClearDB MySQL`.
+3. Vincular este repositorio de GitHub a Heroku y activar los "Automatic Deploys".
+4. El sistema se compilará automáticamente usando el archivo `system.properties` para definir la versión de Java.
 
 ### Ejecución de Pruebas
 * Para pruebas manuales: Hacer clic derecho en el proyecto y seleccionar **"Run"**.
