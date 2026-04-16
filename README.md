@@ -28,3 +28,16 @@ Modelo: Gestiona la lógica de los datos de las refacciones (Clases Java POJO).
 Vista: Interfaz gráfica desarrollada en NetBeans (Swing) para la interacción con el usuario.
 
 Controlador: Gestiona la comunicación entre la interfaz y la lógica de negocio.
+## Tabla de Contenidos
+- [Requerimientos](#-requerimientos)
+- [Instalación](#-instalación)
+- [Configuración](#-configuración)
+- [Uso](#-uso)
+
+## Requerimientos
+Para ejecutar este proyecto, se requiere el siguiente entorno:
+* **Java:** JDK 17+
+* **IDE:** NetBeans IDE
+* **Build Tool:** Maven 3.0+
+* **Base de Datos:** MySQL / Local Derby
+* **SO:** Windows 11
