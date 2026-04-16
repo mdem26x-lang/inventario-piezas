@@ -41,3 +41,30 @@ Para ejecutar este proyecto, se requiere el siguiente entorno:
 * **Build Tool:** Maven 3.0+
 * **Base de Datos:** MySQL / Local Derby
 * **SO:** Windows 11
+## 📋 Tabla de Contenidos
+- [Requerimientos](#-requerimientos)
+- [Instalación](#-instalación)
+- [Configuración](#-configuración)
+- [Uso](#-uso)
+
+##  Requerimientos
+Para ejecutar este proyecto, se requiere el siguiente entorno:
+* **Java:** JDK 17 o superior.
+* **IDE:** NetBeans IDE 21.
+* **Build Tool:** Maven 3.0+.
+* **Base de Datos:** MySQL 8.0 / Derby Local.
+* **SO:** Windows 11.
+
+##  Instalación
+### Ambiente de Desarrollo
+1. Clonar el repositorio: `git clone https://github.com/mdem26x-lang/inventario-piezas.git`
+2. Abrir el proyecto en NetBeans (File > Open Project).
+3. Dejar que Maven descargue las dependencias automáticamente.
+
+### Ejecución de Pruebas
+* Para pruebas manuales: Hacer clic derecho en el proyecto y seleccionar **"Run"**.
+* Verificar la conexión a la base de datos en el panel de "Services" de NetBeans.
+
+##  Configuración
+1. **Base de Datos:** Configurar las credenciales en el archivo `src/main/resources/config.properties` (o el archivo de conexión que definamos).
+2. **Dependencias:** Asegurarse de tener instalado el conector de MySQL en el archivo `pom.xml`.
