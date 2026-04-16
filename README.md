@@ -144,3 +144,25 @@ Sección destinada al responsable de mantener la integridad de la base de datos:
 * **Alta de Nuevas Partes:** Utilice el formulario de "Nuevo Registro" para ingresar el código, descripción, categoría y ubicación de nuevas piezas que lleguen al inventario.
 * **Actualización de Inventario:** Para modificar la cantidad de piezas tras un mantenimiento, seleccione la pieza y use la función "Editar Stock".
 * **Respaldo de Información:** El administrador tiene acceso al botón "Exportar", que genera un archivo con el listado completo de los 224 números de parte para auditorías o revisiones externas.
+
+## Contribución
+
+Para mantener el orden en el desarrollo del sistema de inventario, se solicita a los colaboradores seguir este flujo de trabajo:
+
+1. **Clonar el repositorio:**
+   Obtenga una copia local del proyecto:
+   `git clone https://github.com/mdem26x-lang/inventario-piezas.git`
+
+2. **Crear una nueva rama (Branch):**
+   Antes de hacer cambios, cree una rama específica para la tarea (ej. añadir nuevos números de parte):
+   `git checkout -b feature/nueva-funcionalidad`
+
+3. **Realizar cambios y Commits:**
+   Realice las modificaciones necesarias y guarde sus cambios con mensajes descriptivos:
+   `git commit -m "Añade lógica de búsqueda para refacciones neumáticas"`
+
+4. **Enviar Pull Request (PR):**
+   Suba su rama al repositorio remoto y abra un Pull Request en GitHub explicando los cambios realizados.
+
+5. **Revisión y Merge:**
+   El administrador revisará el código y, si todo es correcto, realizará el "Merge" a la rama principal (main). No se permite hacer cambios directamente en la rama main sin revisión previa.
