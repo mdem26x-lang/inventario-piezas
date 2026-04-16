@@ -127,3 +127,20 @@ Para asegurar que todos los paquetes adicionales funcionen, se deben validar los
 * **Configuración de Maven (`pom.xml`):** Es el corazón del proyecto. Aquí se definen las dependencias que mencionamos en los requerimientos. Se debe asegurar que el conector de MySQL esté correctamente declarado para evitar errores de "Driver not found".
 * **Variables de Entorno:** Es necesario verificar que la variable `JAVA_HOME` apunte correctamente a la ruta de instalación del JDK 17 en Windows 11 para que NetBeans pueda compilar el proyecto sin conflictos.
 * **Privilegios de Base de Datos:** El usuario configurado debe tener permisos de `SELECT`, `INSERT`, `UPDATE` y `DELETE` sobre la tabla de los 224 números de parte para permitir la gestión completa del inventario.
+
+## Uso
+
+### 1. Referencia para el Usuario Final (Manual de Operación)
+Este manual está diseñado para el personal de almacén o mantenimiento que requiere localizar refacciones de forma rápida:
+
+* **Búsqueda de Refacciones:** - Ingrese el número de parte o el nombre de la pieza en el cuadro de búsqueda principal.
+  - El sistema filtrará automáticamente los 224 registros en tiempo real.
+* **Localización Física:** - Una vez encontrada la pieza, observe la columna "Ubicación". El sistema le indicará el estante y nivel (ej. D.2.41) para reducir el tiempo de traslado.
+* **Consulta de Existencias:** - El color de la fila indicará el estado del stock: Verde (Disponible), Amarillo (Stock bajo) y Rojo (Agotado).
+
+### 2. Referencia para el Usuario Administrador
+Sección destinada al responsable de mantener la integridad de la base de datos:
+
+* **Alta de Nuevas Partes:** Utilice el formulario de "Nuevo Registro" para ingresar el código, descripción, categoría y ubicación de nuevas piezas que lleguen al inventario.
+* **Actualización de Inventario:** Para modificar la cantidad de piezas tras un mantenimiento, seleccione la pieza y use la función "Editar Stock".
+* **Respaldo de Información:** El administrador tiene acceso al botón "Exportar", que genera un archivo con el listado completo de los 224 números de parte para auditorías o revisiones externas.
