@@ -28,6 +28,22 @@ Modelo: Gestiona la lógica de los datos de las refacciones (Clases Java POJO).
 Vista: Interfaz gráfica desarrollada en NetBeans (Swing) para la interacción con el usuario.
 
 Controlador: Gestiona la comunicación entre la interfaz y la lógica de negocio.
+## Requerimientos Técnicos Detallados
+
+### Servidores y Base de Datos
+* **Servidor de Base de Datos:** MySQL Server 8.0 (Localhost) o MariaDB. Se utilizará para el almacenamiento persistente de los 224 registros de refacciones.
+* **Servidor de Aplicación:** No requiere (Aplicación de escritorio Standalone ejecutada mediante Java Runtime Environment).
+
+### Versión de Java y Entorno
+* **Java Development Kit (JDK):** Versión 17 (LTS) o superior. Se recomienda OpenJDK por su compatibilidad con proyectos Maven.
+* **IDE de Desarrollo:** Apache NetBeans IDE 21.
+* **Gestor de Proyectos:** Apache Maven 3.9 (para la gestión automatizada de dependencias).
+
+### Paquetes Adicionales (Dependencias Maven)
+Para el correcto funcionamiento de la solución, se han integrado los siguientes paquetes:
+* **MySQL Connector/J:** Librería oficial para permitir que Java se comunique con la base de datos MySQL.
+* **FlatLaf:** (Opcional) Paquete para modernizar la apariencia visual de la interfaz Swing.
+* **Apache POI:** (Sugerido) Para permitir que el sistema exporte el inventario actual a archivos de Excel.
 ## Tabla de Contenidos
 - [Requerimientos](#-requerimientos)
 - [Instalación](#-instalación)
@@ -41,7 +57,7 @@ Para ejecutar este proyecto, se requiere el siguiente entorno:
 * **Build Tool:** Maven 3.0+
 * **Base de Datos:** MySQL / Local Derby
 * **SO:** Windows 11
-## 📋 Tabla de Contenidos
+##  Tabla de Contenidos
 - [Requerimientos](#-requerimientos)
 - [Instalación](#-instalación)
 - [Configuración](#-configuración)
