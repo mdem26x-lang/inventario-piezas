@@ -109,3 +109,21 @@ Para ejecutar la aplicación fuera de NetBeans:
 ##  Configuración
 1. **Base de Datos:** Configurar las credenciales en el archivo `src/main/resources/config.properties` (o el archivo de conexión que definamos).
 2. **Dependencias:** Asegurarse de tener instalado el conector de MySQL en el archivo `pom.xml`.
+
+   ## Configuración
+
+### 1. Configuración del Producto
+La aplicación utiliza archivos específicos para gestionar el comportamiento del sistema sin necesidad de modificar el código fuente:
+
+* **Archivo de Conexión (`src/main/resources/db.properties`):** En este archivo se deben configurar las credenciales de la base de datos:
+  - `db.url`: Dirección del servidor (ej. localhost:3306/inventario).
+  - `db.user`: Nombre de usuario de MySQL.
+  - `db.password`: Contraseña de acceso.
+* **Archivo de Log:** Configuración para el registro de errores y eventos del sistema durante la ejecución.
+
+### 2. Configuración de los Requerimientos
+Para asegurar que todos los paquetes adicionales funcionen, se deben validar los siguientes puntos:
+
+* **Configuración de Maven (`pom.xml`):** Es el corazón del proyecto. Aquí se definen las dependencias que mencionamos en los requerimientos. Se debe asegurar que el conector de MySQL esté correctamente declarado para evitar errores de "Driver not found".
+* **Variables de Entorno:** Es necesario verificar que la variable `JAVA_HOME` apunte correctamente a la ruta de instalación del JDK 17 en Windows 11 para que NetBeans pueda compilar el proyecto sin conflictos.
+* **Privilegios de Base de Datos:** El usuario configurado debe tener permisos de `SELECT`, `INSERT`, `UPDATE` y `DELETE` sobre la tabla de los 224 números de parte para permitir la gestión completa del inventario.
