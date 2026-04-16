@@ -166,3 +166,12 @@ Para mantener el orden en el desarrollo del sistema de inventario, se solicita a
 
 5. **Revisión y Merge:**
    El administrador revisará el código y, si todo es correcto, realizará el "Merge" a la rama principal (main). No se permite hacer cambios directamente en la rama main sin revisión previa.
+
+## Roadmap
+
+Este proyecto se encuentra en su fase inicial de digitalización. Los próximos hitos de desarrollo incluyen:
+
+* **Integración de Reportes Automáticos:** Generación de archivos PDF con el listado de piezas faltantes para órdenes de compra.
+* **Módulo de Escaneo QR:** Implementación de códigos QR en los estantes físicos para que el usuario pueda escanearlos con el celular y ver la información de la pieza en tiempo real.
+* **Interfaz Web:** Migrar la lógica actual de escritorio a una plataforma web responsiva (Spring Boot) para acceso desde cualquier dispositivo móvil.
+* **Dashboard Estadístico:** Visualización gráfica de las piezas con mayor rotación y alertas de mantenimiento predictivo.
