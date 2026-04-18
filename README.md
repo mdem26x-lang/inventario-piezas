@@ -175,3 +175,7 @@ Este proyecto se encuentra en su fase inicial de digitalización. Los próximos 
 * **Módulo de Escaneo QR:** Implementación de códigos QR en los estantes físicos para que el usuario pueda escanearlos con el celular y ver la información de la pieza en tiempo real.
 * **Interfaz Web:** Migrar la lógica actual de escritorio a una plataforma web responsiva (Spring Boot) para acceso desde cualquier dispositivo móvil.
 * **Dashboard Estadístico:** Visualización gráfica de las piezas con mayor rotación y alertas de mantenimiento predictivo.
+
+---
+### Video de Demostración
+[Haz clic aquí para ver el video de presentación del sistema]([PEGA_AQUÍ_TU_LINK_DE_DRIVE](https://drive.google.com/file/d/1MaP2p1KvMIyl7htCDR5U1TRld2gzylNn/view?usp=sharing))
