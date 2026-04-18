@@ -178,4 +178,4 @@ Este proyecto se encuentra en su fase inicial de digitalización. Los próximos 
 
 ---
 ### Video de Demostración
-[Haz clic aquí para ver el video de presentación del sistema]([https://drive.google.com/file/d/1MaP2p1KvMIyl7htCDR5U1TRld2gzylNn/view?usp=sharing]
+[Haz clic aquí para ver el video de presentación del sistema] [https://drive.google.com/file/d/1MaP2p1KvMIyl7htCDR5U1TRld2gzylNn/view?usp=sharing]
