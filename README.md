@@ -35,7 +35,7 @@ Controlador: Gestiona la comunicación entre la interfaz y la lógica de negocio
 * **Servidor de Aplicación:** No requiere (Aplicación de escritorio Standalone ejecutada mediante Java Runtime Environment).
 
 ### Versión de Java y Entorno
-* **Java Development Kit (JDK):** Versión 17 (LTS) o superior. Se recomienda OpenJDK por su compatibilidad con proyectos Maven.
+* **Java Development Kit (JDK):** Versión 21 (LTS) o superior. Se recomienda OpenJDK por su compatibilidad con proyectos Maven.
 * **IDE de Desarrollo:** Apache NetBeans IDE 21.
 * **Gestor de Proyectos:** Apache Maven 3.9 (para la gestión automatizada de dependencias).
 
@@ -52,7 +52,7 @@ Para el correcto funcionamiento de la solución, se han integrado los siguientes
 
 ## Requerimientos
 Para ejecutar este proyecto, se requiere el siguiente entorno:
-* **Java:** JDK 17+
+* **Java:** JDK 21}+
 * **IDE:** NetBeans IDE
 * **Build Tool:** Maven 3.0+
 * **Base de Datos:** MySQL / Local Derby
@@ -65,7 +65,7 @@ Para ejecutar este proyecto, se requiere el siguiente entorno:
 
 ##  Requerimientos
 Para ejecutar este proyecto, se requiere el siguiente entorno:
-* **Java:** JDK 17 o superior.
+* **Java:** JDK 21 o superior.
 * **IDE:** NetBeans IDE 21.
 * **Build Tool:** Maven 3.0+.
 * **Base de Datos:** MySQL 8.0 / Derby Local.
